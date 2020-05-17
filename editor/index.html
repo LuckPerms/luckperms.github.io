@@ -48,22 +48,6 @@
 </head>
 
 <body>
-<div id="bar" style="display: none;">
-  <ul class="flex-center">
-    <li>
-      <a href="../"><img alt="LuckPerms Logo" class="tiny-logo" width="40" height="40" src="../assets/logo/40px.png" srcset="../assets/logo/80px.png 2x, ../assets/logo/160px.png 4x"></a>
-      <h3>Web Permissions Editor</h3>
-    </li>
-    <li id="identifier"></li>
-    <li>
-      <i id="undo-button" class="unclickable material-icons undo" title="Undo (Ctrl + Z)">undo</i>
-      <i id="redo-button" class="unclickable material-icons redo" title="Redo (Ctrl + Y)">redo</i>
-      <i id="save-button" class="clickable material-icons save" title="Save (Ctrl + S)">save</i>
-      <i style="display: none" id="help-button" class="clickable material-icons help" title="Help (Ctrl + H)">help</i>
-    </li>
-  </ul>
-  <div id="tab" style="display: none"></div>
-</div>
 
 <div class="content">
   <div id="popup"></div>
@@ -85,25 +69,6 @@
           <span class="cmd">/lp group &lt;group&gt; editor</span>
         </h4>
       </div>
-    </div>
-
-    <div id="table-content" class="wrapper" style="display: none;">
-      <div class="table-input-bar">
-        <div class="newentry">
-          <div id="inpform">
-            <input type="text" class="autocomp" name="permission" placeholder="Permission" title="Filter through known permissions or add a new one.">
-            <input type="text" name="expiry" class="datepicker-here" placeholder="Expiry" data-language="en" data-timepicker="true" title="When will the permission expire? Leave blank for no expiry.">
-            <input type="text" name="server" placeholder="Server" title="Restrict this permission to a certain server. Leave blank for global.">
-            <input type="text" name="world" placeholder="World" title="Restrict this permission to a certain world. Leave blank for global.">
-            <input type="text" name="contexts" placeholder="Contexts" title="Add custom contexts.">
-            <input type="checkbox" name="value" id="inpvalue" checked>
-            <label for="inpvalue" title="Click to toggle the true/false value."></label>
-            <i class="clickable material-icons add" title="Add permission.">add_box</i>
-          </div>
-        </div>
-      </div>
-
-      <div id="table-section"></div>
     </div>
   </div>
 </div>
